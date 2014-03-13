@@ -1,3 +1,8 @@
+# install git
+# sudo aptitude install git
+# git clone https://github.com/mzgcz/self-rex.git
+# git clone https://github.com/mzgcz/self-repository.wiki.git
+
 # install rex
 # sudo aptitude install libnet-ssh2-perl curl openssh-server
 # curl -L get.rexify.org | perl - --sudo -n Rex
@@ -17,12 +22,12 @@ task "prepare", group => "myserver", sub {
   install [qw/sawfish/];
   install [qw/nitrogen/];       # 壁纸设置工具
   install [qw/vim/];
+  install [qw/fcitx im-switch fcitx-googlepinyin/]; # 输入法
   install [qw/emacs24 cscope-el libnotify-bin yasnippet clang/];
   install [qw/ttf-bitstream-vera ttf-wqy-microhei ttf-wqy-zenhei/]; # 字体
   install [qw/sbcl racket/];                                        # lisp相关
   install [qw/yakuake/];                                            # 终端
   install [qw/build-essential/];                                    # 编译工具
-  install [qw/git/];
   install [qw/python-openssl libnss3-tools python-crypto/];         # goagent代理
   install [qw/axel/];                                               # 下载工具
   install [qw/unrar/];
